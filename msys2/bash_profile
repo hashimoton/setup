@@ -3,9 +3,6 @@ if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
 
-# Stop automatic path conversion by MSYS2
-export MSYS2_ARG_CONV_EXCL="*"
-
 # 64 bit
 export C_INCLUDE_PATH="/usr/local/include:/mingw64/include:/usr/include"
 export PATH="$PATH:/mingw64/bin"

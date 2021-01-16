@@ -9,6 +9,16 @@ set +m
 
 # Some shortcuts for different directory listings
 alias ls='ls -hF --color=tty'                 # classify files in colour
+
+# Disable automatic path conversion by MSYS2
+alias disableconv='export MSYS2_ARG_CONV_EXCL="*"'
+
+# Enable automatic path conversion by MSYS2
+alias enableconv='export MSYS2_ARG_CONV_EXCL=1'
+
+# Remove duplicate path from PATH
+# http://linuxg.net/oneliners-for-removing-the-duplicates-in-your-path/
+alias compactpath="export PATH=$(echo -n $PATH | awk -v RS=: -v ORS=: '!arr[$0]++')"
  
 # b) function cd_func
 # This function defines a 'cd' replacement function capable of keeping, 
