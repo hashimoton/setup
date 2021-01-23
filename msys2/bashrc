@@ -99,6 +99,8 @@ function _blue() {
 }
 
 alias www='winpty www.bat'
+alias java='winpty java'
+alias javac='winpty javac'
 
 # EOF
 
